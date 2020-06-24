@@ -152,7 +152,6 @@ header::after {
   text-transform: uppercase;
   font-weight: 700;
 }
-
 .logo span {
   font-weight: 300;
 }
@@ -165,23 +164,20 @@ header::after {
   clip-path: circle(0px at top right);
   transition: clip-path ease-in-out 700ms;
 }
-
-.site-nav-open {
-  clip-path: circle(150% at top right);
-}
-
 .site-nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
 .site-nav li {
   border-bottom: 1px solid #575766;
 }
-
 .site-nav li:last-child {
   border-bottom: none;
+}
+
+.site-nav-open {
+  clip-path: circle(150% at top right);
 }
 
 .site-nav a {
@@ -191,9 +187,8 @@ header::after {
   text-transform: uppercase;
   text-decoration: none;
 }
-
-.site-nav a:hover,
-.site-nav a:focus {
+.site-nav a a:hover,
+.site-nav a a:focus {
   background: #e4b363;
   color: #464655;
 }
@@ -259,24 +254,21 @@ header::after {
     margin-right: 10px;
     clip-path: initial;
   }
-
   .site-nav li {
     display: inline-block;
     border: none;
   }
-
   .site-nav a {
     padding: 0;
     margin-left: 3em;
   }
-
-  .site-nav--icon {
-    display: none;
-  }
-
   .site-nav a:hover,
 .site-nav a:focus {
     background: transparent;
+  }
+
+  .site-nav--icon {
+    display: none;
   }
 }
 body {
