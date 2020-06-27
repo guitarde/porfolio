@@ -12,6 +12,14 @@ li {
 }
 
 
+/** ========  SOBRE MI  */
+
+.sobre-mi-img {
+    width: 30%;
+    float: left;
+}
+
+
 /** ========  PORTADA  */
 
 .portada-info {
@@ -36,6 +44,23 @@ li {
 
 
 /** ========  PORFOLIO */
+
+.categorias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.categorias a {
+    color: #9B9B9B;
+    margin: 10px 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.categorias a.activo {
+    color: #000;
+}
 
 .container-porfolio:nth-child(2) {
     padding: 20px 10px 60px 10px;
@@ -88,6 +113,7 @@ li {
     display: block;
     max-width: 100%;
     height: auto;
+    margin-bottom: 15%;
 }
 
 .skills-imgs {
@@ -111,6 +137,10 @@ li {
     }
 }
 
+.mapa {
+    border-radius: 10px;
+}
+
 .parallax {
     background-size: cover;
     background-repeat: no-repeat;
@@ -121,4 +151,29 @@ li {
 .container-info {
     background-image: url(../img/contacto-info.jpg);
     padding-bottom: 90px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+div {
+    h2 {
+        color: rgb(128, 54, 49);
+    }
+}
+
+p {
+    font-size: 15pt;
+    font-family: Verdana;
+}
+
+div {
+    div {
+        p {
+            text-align: right
+        }
+    }
 }
