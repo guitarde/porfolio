@@ -25,8 +25,10 @@ li {
 
 /** ========  SOBRE MI  */
 .sobre-mi-img {
-  width: 30%;
+  display: flex;
+  width: 250px;
   float: left;
+  margin-top: -10%;
 }
 
 /** ========  PORTADA  */
@@ -48,6 +50,53 @@ li {
   overflow: hidden;
   background-size: cover;
   -webkit-background-size: cover;
+}
+
+.animate-titulo div {
+  display: inline-block;
+  overflow: hidden;
+}
+.animate-titulo div:last-of-type {
+  width: 0px;
+  animation: reveal 7s infinite;
+}
+.animate-titulo div:last-of-type span {
+  margin-left: -355px;
+  animation: slidein 7s infinite;
+}
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 355px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 355px;
+  }
 }
 
 /** ========  PORFOLIO */
@@ -98,7 +147,7 @@ li {
 }
 
 .container-porfolio {
-  padding: 4% 15%;
+  padding: 10% 15%;
 }
 
 /** ========  skills */
@@ -155,7 +204,7 @@ li {
 }
 
 div h2 {
-  color: #803631;
+  color: #2d2f81;
 }
 
 p {
@@ -165,6 +214,7 @@ p {
 
 div div p {
   text-align: right;
+  margin-top: 9%;
 }
 
 /* ------------------------- */
