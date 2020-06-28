@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+
+
+    <!-- ESTILOS -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="assets/css/style.css">
+
+
+    <link rel='stylesheet' type='text/css' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" type='text/css' href="assets/css/bootstrap.min.css">
+    <link ref="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-a">
+            <h1 class="logo">IT <span>SOLUTIONS</span></h1>
+        </div>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="#portada"><i class="fa  site-nav--icon"></i>INICIO</a></li>
+                <li><a href="#sobre-mi"><i class="fa site-nav--icon"></i>SOBRE MI</a></li>
+                <li><a href="#porfolio"><i class="fa site-nav--icon"></i>PORFOLIO</a></li>
+                <li><a href="#skills"><i class="fa  site-nav--icon"></i>SKILLS</a></li>
+                <li><a href="#contacto"><i class="fa site-nav--icon"></i>CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
+            <div class="hamburger"></div>
+        </div>
+    </header>
+
+    <!-- FIN HEADERMENU -->
+    <section id="portada">
+        <div class="content-header content-portada">
+            <div class="header-video">
+                <video src="./assets/video/video.mp4" autoplay loop></video>
+            </div>
+            <div class="header-overlay"></div>
+            <div class="header-content">
+                <h1>Bienvenido</h1><br>
+                <div class="animate-titulo">
+                    <div>Transformando</div>
+                    <div>
+                        <span>tus ideas en tecnologías de la nueva era.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mi">
+        <div class="container-porfolio">
+            <h2>SOBRE MI</h2>
+            <div class="sobre-mi">
+                <img class="sobre-mi-img" src="./assets/img/sobremi.png" alt="">
+                <p>!Hola! Soy Luis, web developer. Mi objectivo en la vida es crecer a nivel personal y profesional. Me gusta la música, y aclarar mis ideas con ella</p>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="porfolio">
+        <div class="container-porfolio">
+            <div>
+                <h2>PORFOLIO</h2>
+                <p>Aquí puedes consultar los proyectos que he ido realizando en mi carrera como desarrollador </p>
+            </div>
+
+            <div class="porfolio-imgs">
+                <img class="porfolio-img" src="assets/img/angular-porfolio.jpg">
+                <img class="porfolio-img" src="assets/img/oracle-porfolio.png">
+                <img class="porfolio-img" src="assets/img/html-porfolio.jpg">
+                <img class="porfolio-img" src="assets/img/spring-porfolio.jpeg">
+                <img class="porfolio-img" src="assets/img/mongo-porfolio.jpg">
+                <img class="porfolio-img" src="assets/img/desarrollo-img.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container-skils">
+            <div>
+                <h2>SKILLS</h2>
+            </div>
+            <div class="skills-imgs">
+                <div class="col-md-2"><img class="skill-logo" src="assets/img/angular.png"></div>
+                <div class="col-md-2"><img class="skill-logo" src="assets/img/spring.png"></div>
+                <div class="col-md-2"><img class="skill-logo" src="assets/img/java.png"></div>
+                <div class="col-md-2"><img class="skill-logo" src="assets/img/Scala_logo.png"></div>
+                <div class="col-md-2"><img class="skill-logo" src="assets/img/mongodb.png"></div>
+                <div class="col-md-2"><img class="skill-logo" src="assets/img/phpc.png"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="contacto">
+        <div class="container-info parallax">
+            <div id="google-map" class="wow fadeIn" data-latitude="52.365629" data-longitude="4.871331" data-wow-duration="1000ms" data-wow-delay="400ms"></div>
+            <div id="contactos" class="parallax">
+                <div class="container">
+                    <div class="row">
+                        <div class="heading  col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <h2>CONTÁCTAME</h2>
+                        </div>
+                    </div>
+                    <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <form id="main-contact-form" name="contact-form" method="post" action="#">
+                                    <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <input type="text" name="name" class="form-control" placeholder="Name" required="required">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <input type="email" name="email" class="form-control" placeholder="Email Address" required="required">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="subject" class="form-control" placeholder="Subject" required="required">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="message" id="message" class="form-control" rows="4" placeholder="Enter your message" required="required"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary btn-submit">ENVIAR AHORA</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="contacto-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+
+                                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.636356632363!2d-3.7056774489684203!3d40.41690596345128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422880a07d7dc7%3A0x694aee57da1dc679!2sPuerta%20del%20Sol%2C%20Madrid!5e0!3m2!1ses!2ses!4v1592398674899!5m2!1ses!2ses"
+                                        width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></li>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--/# FIN CONTACTO-->
+
+    <footer class="contenedor">
+        <div class="redes-sociales">
+            <div class="contenedor-icono">
+                <a href="http://www.twitter.com/falconmasters" target="_blank" class="twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="contenedor-icono">
+                <a href="http://www.facebook.com/falconmasters" target="_blank" class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+            <div class="contenedor-icono">
+                <a href="http://www.instagram.com" target="_blank" class="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div class="creado-por">
+            <p><small>Copyright &copy; 2012. Todos los derechos reservados. <br>
+        </div>
+    </footer>
+
+   
+
+    <script src="./assets/js/app.js"></script>
+
+</body>
+
+</html>

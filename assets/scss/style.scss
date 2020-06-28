@@ -1,0 +1,16 @@
+@import "header";
+@import "main";
+@import "footer";
+@import "menu";
+@import "portada";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    background-color: #e7e8ed;
+}
